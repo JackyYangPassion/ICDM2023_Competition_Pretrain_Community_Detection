@@ -33,7 +33,7 @@
 
 (1) 预训练数据预处理
 
-`python ./ogbn_preprocess.py`
+`python3 ./ogbn_preprocess.py`
 
 (2) 预训练以及测试
 

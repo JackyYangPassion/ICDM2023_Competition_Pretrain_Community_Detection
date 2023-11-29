@@ -349,6 +349,7 @@ def train(dataset, args, verbose=True):
             adj = sparse_mx_to_torch_sparse_tensor(sp.coo_matrix(adj))
             diff = sparse_mx_to_torch_sparse_tensor(sp.coo_matrix(diff))
 
+        #TODO: data type error need to be fixed
         features = torch.FloatTensor(features[np.newaxis])
         adj = torch.unsqueeze(adj, 0)
         diff = torch.unsqueeze(diff, 0)
